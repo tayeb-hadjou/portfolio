@@ -1,11 +1,74 @@
 ---
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
+import AboutExperience from "../components/about-experience.astro";
+import education from "../collections/education.json";
 ---
 
 <Layout title="About Me">
-  <section style="text-align: center; margin-top: 50px;">
-    <h2>Coming Soon</h2>
-    <p>This page is under construction. Please check back later.</p>
-  </section>
+  <section class="relative z-20 max-w-3xl mx-auto my-12 px-7 lg:px-0 mt-32">
+    <PageHeading
+      title="About Me"
+      description="Hello 👋 I'm computer science student with a specialization in fullstack development.Naturally curious, I am interested in various fields and always seeking new knowledge to improve my skills."
+        />
+    
+     <img src="./assets/images/about/about.jpg" class="relative z-30 w-full my-8 h-80 rounded-xl" />
+
+    <h2 class="mb-3 text-2xl font-bold dark:text-neutral-200">Skills</h2>
+    <p
+      class="text-sm leading-6 text-gray-600 dark:text-neutral-400 sm:leading-7 lg:leading-8 sm:text-base lg:text-lg mb-8"
+    >
+      I master several programming languages, as well as front-end frameworks like JavaScript, React, Redux, and Vue, and back-end technologies such as Python, PHP, Java, and SQL. Additionally, I have strong skills in database management.
+      
+    </p>
+    <h2
+      class="mt-8 mb-3 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+    Experience
+    </h2>
+    <div class="px-5 pt-4 pb-4">
+      <div class=" border-gray-200 dark:border-neutral-700">
+        <AboutExperience
+          dates="May 2022 . August 2022  "
+          role="Web developer intern"
+          company="Aezan Services"
+          description="Front-end developer in REACT/REDUX for a video conferencing platform "
+          logo="./assets/images/about/aezan.jpg"
+        />
+      </div>
+    </div>
+    <h2
+    class="mt-8 mb-3 text-2xl font-bold lg:mt-10 sm:mt-6 dark:text-neutral-200"
+    >
+    Education
+    </h2>
+    <div class="px-5 pt-4 pb-4">
+      {
+        education.map((education, loop) => {
+          return (
+            <>
+              {loop == 0 || loop == 1 ? (
+                <div class="pb-10 border-l border-gray-200 dark:border-neutral-700">
+                  <AboutExperience
+                    dates={education.dates}
+                    role={education.role}
+                    company={education.company}
+                    description={education.description}
+                    logo={education.logo}
+                  />
+                </div>
+              ) : (
+                <AboutExperience
+                    dates={education.dates}
+                    role={education.role}
+                    company={education.company}
+                    description={education.description}
+                    logo={education.logo}
+                />
+              )}
+            </>
+          )
+        })
+      }
+    </div>
 </Layout>
