@@ -4,20 +4,20 @@
 		"role": "Master WeDSci (Web)",
 		"company": "Université de littoral côte d'opale",
 		"description": "training focused on fullstack web development tech and methods",
-		"logo": "portfolio/assets/images/about/ulco.jpg"
+		"logo": "/portfolio/assets/images/about/ulco.jpg"
 	},
 	{
 		"dates": "September 2022 · August 2023",
 		"role": "Master E-Services",
 		"company": "Université de Lille",
 		"description": "formation focuses on mastering information sciences and communications technologies.",
-		"logo": "portfolio/assets/images/about/ulco.jpg"
+		"logo": "/portfolio/assets/images/about/u_lille.jpg"
 	},
 	{
 		"dates": "September 2019 · August 2022 ",
 		"role": "Degree in computer science",
 		"company": "Université de Lille",
 		"description": "General computer training ",
-		"logo": "portfolio/assets/images/about/ulco.jpg"
+		"logo": "/portfolio/assets/images/about/u_lille.jpg"
 	}
 ]
