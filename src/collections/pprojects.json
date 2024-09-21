@@ -1,0 +1,12 @@
+[
+	{
+        "name" : "Visit Card",
+        "description" : "Business card manager web application",
+        "parts":["The back end is made with ExpressJs","The front end is made with javascript PUG"
+                ,"The database is managed with MongoDB","JWT and cookie-session is used for authentication"
+                ],
+        "image" : "/portfolio/assets/images/projects/visitCard.jpg",
+        "url" : "https://github.com/tayeb-hadjou/Visit-card",
+        "tools" : ["Express.Js", "JS", "PUG", "MongoDB", "JWT"]
+	}
+]

@@ -2,11 +2,54 @@
 
 import PageHeading from "../components/page-heading.astro";
 import Layout from "../layouts/main.astro";
+import Project from "../components/project.astro";
+import academicProjects from "../collections/aprojects.json";
+import personalProjects from "../collections/pprojects.json";
 ---
-
 <Layout title="My Projects">
-  <section style="text-align: center; margin-top: 50px;">
-    <h2>Coming Soon</h2>
-    <p>This page is under construction. Please check back later.</p>
+  <section class="relative z-20 max-w-4xl mx-auto  px-7 lg:px-0 mt-32">
+    <PageHeading
+      title="My Projects"
+      description="Here are some of the projects I've worked on. I really enjoy creating new projects, coming up with new ideas and learning new skills."
+    />
+
+    <br/>
+    <h2 class="mb-3 text-2xl font-bold dark:text-neutral-200">Personal project</h2> 
+    <div
+      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
+    >
+      {
+        personalProjects.map((project) => {
+          return (
+            <Project
+              name={project.name}
+              description={project.description}
+              image={project.image}
+              url={project.url}
+              tools={project.tools}
+              parts={project.parts}
+            />
+          )
+        })
+      }
+    </div>
+    <h2 class="mb-3 text-2xl font-bold dark:text-neutral-200">Academic project</h2> 
+    <div
+      class="z-50 grid items-stretch w-full grid-cols-1 my-8 gap-7 sm:gap-5 sm:grid-cols-2"
+    >
+      {
+        academicProjects.map((project) => {
+          return (
+            <Project
+              name={project.name}
+              description={project.description}
+              image={project.image}
+              tools={project.tools}
+              parts={project.parts}
+            />
+          )
+        })
+      }
+    </div>
   </section>
 </Layout>

@@ -1,0 +1,11 @@
+[
+	{
+        "name" : "Tree Evolution",
+        "description" : "Forest simulator in Python with a web interface",
+        "parts":["Using the Agile method to drive a project","Development in python and javascript"
+                ,"Implementation of both BDD and TDD methods","E2E testing with Cypress"
+                ,"Continuous integration continuous deployment","Using SonarQube to ensure code quality"],
+        "image" : "/portfolio/assets/images/projects/agile.jpg",
+        "tools" : ["Python", "JS", "Cypress", "TDD/BDD", "SonarQube"]
+	}
+]
