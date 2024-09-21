@@ -8,5 +8,13 @@
         "image" : "/portfolio/assets/images/projects/visitCard.jpg",
         "url" : "https://github.com/tayeb-hadjou/Visit-card",
         "tools" : ["Express.Js", "JS", "PUG", "MongoDB", "JWT"]
-	}
+	},
+	{
+        "name" : "ASCII Art",
+        "description" : "Simple ascii art generator, it takes an image, video or a webcam stream as input and convert it to ascii art",
+        "parts":["Image processing with OpenCV","The application can process images, videos or webcam feeds"],
+        "image" : "/portfolio/assets/images/projects/ascii.jpg",
+        "url" : "https://github.com/tayeb-hadjou/Ascii-art",
+        "tools" : ["Python","QT", "opencv"]
+        }   
 ]

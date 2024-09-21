@@ -7,5 +7,13 @@
                 ,"Continuous integration continuous deployment","Using SonarQube to ensure code quality"],
         "image" : "/portfolio/assets/images/projects/agile.jpg",
         "tools" : ["Python", "JS", "Cypress", "TDD/BDD", "SonarQube"]
-	}
+	},
+	{
+        "name" : "Social network",
+        "description" : "Social network application that lets users register, connect, search for other users, create chat rooms and send messages.",
+        "parts":["Creation of an API applying REST architecture","Using swagger for api documentation",
+                "Implement a robust authentication and authorization model."],
+        "image" : "/portfolio/assets/images/projects/network.jpg",
+        "tools" : ["Node.js","VUE.js", "Swagger","JWT", "MySQL"]
+        }      
 ]
