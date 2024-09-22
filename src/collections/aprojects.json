@@ -6,7 +6,7 @@
                 ,"Implementation of both BDD and TDD methods","E2E testing with Cypress"
                 ,"Continuous integration continuous deployment","Using SonarQube to ensure code quality"],
         "image" : "/portfolio/assets/images/projects/agile.jpg",
-        "tools" : ["Python", "JS", "Cypress", "TDD/BDD", "SonarQube"]
+        "tools" : ["Python", "JS", "Cypress", "TDD/BDD", "SonarQube","Docker"]
 	},
 	{
         "name" : "Social network",
@@ -15,5 +15,13 @@
                 "Implement a robust authentication and authorization model."],
         "image" : "/portfolio/assets/images/projects/network.jpg",
         "tools" : ["Node.js","VUE.js", "Swagger","JWT", "MySQL"]
-        }      
+        },
+        {
+        "name" : "AR App",
+        "description" : "An web application for real-time 3D overlay on a video stream",
+        "parts":["Recognize markers in images", "Overlay another image or a 3D model on the marker's frame",
+                "Interact with the overlaid elements"],
+        "image" : "/portfolio/assets/images/projects/3d.jpg",
+        "tools" : ["JS","OpenCV.js", "three.js"]
+        } 
 ]

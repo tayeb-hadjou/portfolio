@@ -1,6 +1,5 @@
 ---
 const { name, description, parts, url, image,tools } = Astro.props;
-
 ---
 
 <a
@@ -11,21 +10,21 @@ const { name, description, parts, url, image,tools } = Astro.props;
 >
 <span
     class={`absolute inset-0 z-10 block w-full h-full duration-300 ease-out border rounded-2xl border-neutral-300 dark:border-neutral-600 ${
-        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1 '
+        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:opacity-50 '
     }`}
 ></span>
 <span
     class={`relative z-30 block duration-300 ease-out ${
-        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1 '
+        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1  '
     }`}
 >
-    <span class="block w-full">
+    <span class="block w-full group-hover:opacity-50 ">
     <img src={image} class="w-full h-auto rounded-lg aspect-[16/9]" />
     </span>
     
     {url !== undefined && (
         <svg
-            class="w-0 h-0 transition-transform duration-300 ease-out group-hover:scale-125 group-hover:w-6 group-hover:h-6 absolute inset-0 m-auto bottom-40"
+            class="w-0 h-0 transition-transform duration-300 ease-out text-neutral-999 group-hover:w-6 group-hover:h-6 absolute inset-0 m-auto bottom-40"
             fill="currentColor"
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -63,3 +62,4 @@ const { name, description, parts, url, image,tools } = Astro.props;
     </span>
   </span>
 </a>
+

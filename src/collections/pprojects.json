@@ -1,4 +1,21 @@
 [
+        {
+                "name" : "ASCII Art",
+                "description" : "ASCII art generator, it takes an image, video or a webcam stream as input and convert it to ascii art",
+                "parts":["Image processing with OpenCV","The application can process images, videos or webcam feeds"],
+                "image" : "/portfolio/assets/images/projects/ascii.jpg",
+                "url" : "https://github.com/tayeb-hadjou/Ascii-art",
+                "tools" : ["Python","QT","opencv"]
+        },
+        
+        {
+        "name" : "Toc Toc",
+        "description" : "Simple web scraping tool ",
+        "parts":["Search for data on a website"," Notifies changes in a site","Extracts data from a site"],
+        "image" : "/portfolio/assets/images/projects/bot.jpg",
+        "url" : "https://github.com/tayeb-hadjou/MyBot",
+        "tools" : ["Python","Selenium","BeautifulSoup"]
+        },
 	{
         "name" : "Visit Card",
         "description" : "Business card manager web application",
@@ -9,12 +26,12 @@
         "url" : "https://github.com/tayeb-hadjou/Visit-card",
         "tools" : ["Express.Js", "JS", "PUG", "MongoDB", "JWT"]
 	},
-	{
-        "name" : "ASCII Art",
-        "description" : "Simple ascii art generator, it takes an image, video or a webcam stream as input and convert it to ascii art",
-        "parts":["Image processing with OpenCV","The application can process images, videos or webcam feeds"],
-        "image" : "/portfolio/assets/images/projects/ascii.jpg",
-        "url" : "https://github.com/tayeb-hadjou/Ascii-art",
-        "tools" : ["Python","QT", "opencv"]
-        }   
+        {
+        "name" : "React App",
+        "description" : "personal webApp developed in React",
+        "parts":["A memory game","A memes generator"],
+        "image" : "/portfolio/assets/images/projects/react.jpg",
+        "url" : "https://github.com/tayeb-hadjou/React",
+        "tools" : ["React.js", "SCSS"]           
+        }
 ]
