@@ -54,7 +54,7 @@ window.applyMenuItemClasses = () => {
 	const menuItems = document.querySelectorAll("#menu a");
 	for (let i = 0; i < menuItems.length; i++) {
 		if (menuItems[i].pathname === window.location.pathname) {
-			menuItems[i].classList.add("text-neutral-900", "dark:text-white");
+			menuItems[i].classList.add("text-[#ffdc5d]", "dark:text-white");
 		}
 	}
 };
