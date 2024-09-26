@@ -9,17 +9,17 @@ const { name, description, parts, url, image,tools } = Astro.props;
   class="relative flex flex-col items-stretch duration-300 ease-out p-7 sm:p-3 group h-100 rounded-2xl"
 >
 <span
-    class={`absolute inset-0 z-10 block w-full h-full duration-300 ease-out border rounded-2xl border-neutral-300 dark:border-neutral-600 ${
-        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:opacity-50 '
+    class={`absolute inset-0 z-10 block w-full h-full duration-300 ease-out  border rounded-2xl border-neutral-300 dark:border-neutral-600 ${
+        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:opacity-50 group-hover:border-[#ffdc5d]'
     }`}
 ></span>
 <span
-    class={`relative z-30 block duration-300 ease-out ${
-        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1  '
+    class={`relative z-30 block duration-300 ease-out  ${
+        url === undefined ? '' : 'group-hover:-translate-x-1 group-hover:-translate-y-1   '
     }`}
 >
-    <span class="block w-full group-hover:opacity-50 ">
-    <img src={image} class="w-full h-auto rounded-lg aspect-[16/9]" />
+    <span class={`block w-full   ${url === undefined ? '' : 'group-hover:opacity-50 border-[#ffdc5d]' }`}>
+    <img src={image} class="w-full h-auto rounded-lg aspect-[16/9] " />
     </span>
     
     {url !== undefined && (
@@ -54,12 +54,18 @@ const { name, description, parts, url, image,tools } = Astro.props;
       </div>
         <div class="mt-3">
             {tools.map((tool) => (
-            <span class="inline-block  w-auto h-auto px-3 py-1 uppercase tracking-widest  text-[0.6rem] border rounded-full bg-white  text-neutral-600">
-            <p class="leading-none">{tool}</p>
+            <span class="inline-block   w-auto h-auto px-3 py-1 uppercase tracking-widest  text-[0.6rem] border rounded-full bg-white  text-neutral-600">
+            <p class="leading-none ">{tool}</p>
                 </span>
             ))}
         </div>
     </span>
   </span>
 </a>
+
+<style>
+  .fade-in {
+    opacity: 1 !important;
+  }
+</style>
 
