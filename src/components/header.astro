@@ -5,7 +5,7 @@ import Logo from "../components/logo.astro";
 
 <!-- This is an invisible div with relative position so that it takes up the height of the menu (because menu is absolute/fixed) -->
 <div class="relative w-full h-20 opacity-0 pointer-events-none"></div>
-<header id="header" class="absolute top-0 z-50 w-full h-20">
+<header id="header" class="absolute top-0 z-50 w-full h-20 hidden">
   <div
     class="flex items-center justify-between h-full  pl-6 pr-4 mx-auto  border-b border-l-0 border-r-0 border-transparent select-none lg:border-r lg:border-l "
   >
@@ -75,3 +75,18 @@ import Logo from "../components/logo.astro";
     </nav>
   </div>
 </header>
+<style>
+    .fade-in-up {
+    animation: fadeInDown 1.5s ease-out;
+  }
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
