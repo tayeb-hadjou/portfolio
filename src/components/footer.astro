@@ -3,12 +3,15 @@ import Logo from "../components/logo.astro";
 ---
 
 <section
-  class=" border-t  dark:bg-neutral-950 border-neutral-200 dark:border-neutral-800 mt-14"
+
+  
+  class="  h-[53px] w-full   dark:bg-neutral-950 border-neutral-200 dark:border-neutral-800 mt-14"
 >
   <div
-    class="container flex flex-col text-ms items-center py-2 mx-auto px-7 max-w-7xl sm:flex-row"
+    id="footer"
+    class=" hidden  container justify-between flex flex-row text-ms items-center mt-2 mb-2 mx-auto px-7 max-w-7xl sm:flex-row"
   >
-    <div class="flex flex-row">
+    <div class="flex  flex-row">
       <p>
       Hadjou
     </p>
@@ -24,7 +27,7 @@ import Logo from "../components/logo.astro";
       Source code available on <a href="https://github.com/tayeb-hadjou/portfolio" target="_blank" class="text-[#ffdc5d] hover:underline">GitHub</a>
     </p>
     <span
-      class="inline-flex justify-center mt-4 space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"
+      class="inline-flex justify-center  space-x-5 sm:ml-auto sm:mt-0 sm:justify-start"
     >
 
       <a
@@ -106,3 +109,20 @@ import Logo from "../components/logo.astro";
     </span>
   </div>
 </section>
+
+<style>
+  .fade-in-up {
+    animation: fadeInUp 1.5s forwards;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

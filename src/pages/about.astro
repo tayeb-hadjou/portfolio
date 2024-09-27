@@ -12,7 +12,7 @@ import education from "../collections/education.json";
       description="Hello 👋 I'm computer science student with a specialization in fullstack development.Naturally curious, I am interested in various fields and always seeking new knowledge to improve my skills."
         />
     
-     <img src="/portfolio/assets/images/about/about.jpg" class="relative z-30 w-full my-8 h-[340px] rounded-xl" />
+     <img src="/portfolio/assets/images/about/about.jpg" class="relative z-30 my-8 h-[200px] md:h-[380px] md:w-full rounded-xl" />
 
     <h2 class="mb-3 text-2xl font-bold dark:text-neutral-200">Web Development skills</h2>
     <p
@@ -59,7 +59,7 @@ import education from "../collections/education.json";
     >
     Experience
     </h2>
-    <div class="px-5 pt-4 pb-4">
+    <div class="px-5 pt-4 pb-4 ml-2">
       <div class=" border-gray-200 dark:border-neutral-700">
         <AboutExperience
           dates="May 2022 . August 2022  "
@@ -75,7 +75,7 @@ import education from "../collections/education.json";
     >
     Education
     </h2>
-    <div class="px-5 pt-4 pb-4">
+    <div class="px-5 pt-4 pb-4 ml-2 w-full">
       {
         education.map((education, loop) => {
           return (
@@ -117,7 +117,7 @@ import education from "../collections/education.json";
          Here are my social networks and my email address : <a class="text-[#ffdc5d] hover:underline" href="mailto:massihadjou0@gmail.com "> massihadjou0@gmail.com </a>
     </p>
     <span
-      class="flex justify-around mt-8 space-x-5 sm:ml-auto sm:mt-8 "
+      class="flex justify-around mt-8 mr-1 space-x-5 sm:ml-auto sm:mt-8 "
     >
 
       <a
@@ -200,3 +200,9 @@ import education from "../collections/education.json";
     </span>
     
 </Layout>
+<script>
+  const fotterElement = document.getElementById('footer');
+  const headerElement = document.getElementById('header');
+  headerElement.classList.remove('hidden');
+  fotterElement.classList.remove('hidden');
+</script>
