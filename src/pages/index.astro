@@ -2,15 +2,17 @@
 import Button from "../components/button.astro";
 import Separator from "../components/home/separator.astro";
 import Layout from "../layouts/main.astro";
+import Background from "../components/Background.astro";
 ---
 
 <Layout title="tayeb">
+  <Background />  
   <div
     id="test"
     class=" w-full  max-w-4xl mx-auto  px-7 md:mt-20 lg:mt-6 xl:px-0"
   >
-    <div class="md:h-full h-16 flex flex-col-reverse items-center  md:flex-row">
-      <div class="relative w-full h-full md:w-1/2 md:h-full">
+    <div class="md:h-full h-16 flex flex-col-reverse items-center  md:flex-row ">
+      <div class="relative w-full h-full md:w-1/2 md:h-full ">
         <h1
           class=" mb-5 text-4xl font-bold leading-tight md:text-4xl dark:text-white "
         >
@@ -37,10 +39,10 @@ import Layout from "../layouts/main.astro";
           </ul>
         </div>
         </div>
-        <div id="ok" class="relative">
+        <div id="ok" class="relative ">
           <div  class="absolute p-2 w-16 h-16 z-10 w-16 h-16 text-2xl md:top-[-24px] md:left-[-24px]" 
-          ><span id="shake" class=" hidden flex items-center justify-center w-full h-full bg-white border border-dashed rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700">👋</span></div>
-          <div id="image_container" class="relative  h-64 w-64 w-[208px] h-[208px] rounded-full mt-6 md:rounded-2xl md:w-[380px] md:h-72 md:mt-0 border border-neutral-200 border-neutral-300 border-dashed md:px-10 opacity-0 transition-opacity duration-[2000ms]">
+          ><span id="shake" class=" bg-white hidden flex items-center justify-center w-full h-full bg-white border border-dashed rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700">👋</span></div>
+          <div id="image_container" class="relative bg-white  h-64 w-64 w-[208px] h-[208px] rounded-full mt-6 md:rounded-2xl md:w-[380px] md:h-72 md:mt-0 border border-neutral-200 border-neutral-300 border-dashed md:px-10 opacity-0 transition-opacity duration-[2000ms]">
             <img
               src="/portfolio/assets/images/photo.png"
               class="w-full h-full rounded-full md:rounded-2xl"
@@ -104,7 +106,7 @@ import Layout from "../layouts/main.astro";
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const titleText = "Hello, I'm Tayeb.";
-    const attText = "I'm a web development student, looking for a company offering apprenticeship opportunities.";
+    const attText = "I'm a web development student, looking for a company offering apprenticeship opportunities";
     const speed = 50; // typing speed in milliseconds
     const attSpeed = speed / 5; // double the speed for 'att'
     const titleTypingElement = document.getElementById('title_typing');
