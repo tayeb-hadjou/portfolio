@@ -1,14 +1,14 @@
 [
 	{
-		"name": "Home",
+		"name": "Bienvenue",
 		"url": "/portfolio"
 	},
 	{
-		"name": "Projects",
+		"name": "Projets",
 		"url": "/portfolio/projects"
 	},
 	{
-		"name": "About",
+		"name": "Plus",
 		"url": "/portfolio/about"
 	}
 ]

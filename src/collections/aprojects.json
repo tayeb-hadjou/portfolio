@@ -1,27 +1,39 @@
 [
-	{
-        "name" : "Tree Evolution",
-        "description" : "Forest simulator in Python with a web interface",
-        "parts":["Using the Agile method to drive a project","Development in python and javascript"
-                ,"Implementation of both BDD and TDD methods","E2E testing with Cypress"
-                ,"Continuous integration continuous deployment","Using SonarQube to ensure code quality"],
-        "image" : "/portfolio/assets/images/projects/agile.jpg",
-        "tools" : ["Python", "JS", "Cypress", "TDD/BDD", "SonarQube","Docker"]
-	},
-	{
-        "name" : "Social network",
-        "description" : "Social network application that lets users register, connect, search for other users, create chat rooms and send messages.",
-        "parts":["Creation of an API applying REST architecture","Using swagger for api documentation",
-                "Implement a robust authentication and authorization model."],
-        "image" : "/portfolio/assets/images/projects/network.jpg",
-        "tools" : ["Node.js","VUE.js", "Swagger","JWT", "MySQL"]
+        {
+          "name": "Tree Evolution",
+          "description": "Simulateur de forêt en Python avec une interface web",
+          "parts": [
+            "Utilisation de la méthode Agile pour piloter un projet",
+            "Développement en Python et JavaScript",
+            "Mise en œuvre des méthodes BDD et TDD",
+            "Tests E2E avec Cypress",
+            "Intégration et déploiement continus",
+            "Utilisation de SonarQube pour assurer la qualité du code"
+          ],
+          "image": "/portfolio/assets/images/projects/agile.jpg",
+          "tools": ["Python", "JS", "Cypress", "TDD/BDD", "SonarQube", "Docker"]
         },
         {
-        "name" : "AR App",
-        "description" : "An web application for real-time 3D overlay on a video stream",
-        "parts":["Recognize markers in images", "Overlay another image or a 3D model on the marker's frame",
-                "Interact with the overlaid elements"],
-        "image" : "/portfolio/assets/images/projects/3d.jpg",
-        "tools" : ["JS","OpenCV.js", "three.js"]
-        } 
-]
+          "name": "Social network",
+          "description": "Application de réseau social permettant aux utilisateurs de s’inscrire, se connecter, rechercher d'autres utilisateurs, créer des salons de discussion et envoyer des messages.",
+          "parts": [
+            "Création d'une API suivant l'architecture REST",
+            "Utilisation de Swagger pour la documentation de l’API",
+            "Implémentation d’un modèle robuste d’authentification et d’autorisation"
+          ],
+          "image": "/portfolio/assets/images/projects/network.jpg",
+          "tools": ["Node.js", "VUE.js", "Swagger", "JWT", "MySQL"]
+        },
+        {
+          "name": "Application de réalité augmentée ",
+          "description": "Application web de superposition 3D en temps réel sur un flux vidéo",
+          "parts": [
+            "Reconnaissance de marqueurs dans des images",
+            "Superposition d'une autre image ou d’un modèle 3D sur le repère",
+            "Interaction avec les éléments superposés"
+          ],
+          "image": "/portfolio/assets/images/projects/3d.jpg",
+          "tools": ["JS", "OpenCV.js", "three.js"]
+        }
+      ]
+      

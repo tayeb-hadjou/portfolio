@@ -1,23 +1,24 @@
 [
 	{
-		"dates": " September 2023 · Present",
-		"role": "Master WeDSci (Web)",
-		"company": "Université de littoral côte d'opale",
-		"description": "training focused on fullstack web development tech and methods",
-		"logo": "/portfolio/assets/images/about/ulco.jpg"
+	  "dates": "Septembre 2023 · Présent",
+	  "role": "Master WeDSci (Web)",
+	  "company": "Université du Littoral Côte d'Opale",
+	  "description": "Formation axée sur les technologies et méthodes de développement web fullstack",
+	  "logo": "/portfolio/assets/images/about/ulco.jpg"
 	},
 	{
-		"dates": "September 2022 · August 2023",
-		"role": "Master E-Services",
-		"company": "Université de Lille",
-		"description": "formation focuses on mastering information sciences and communications technologies.",
-		"logo": "/portfolio/assets/images/about/u_lille.jpg"
+	  "dates": "Septembre 2022 · Août 2023",
+	  "role": "Master E-Services",
+	  "company": "Université de Lille",
+	  "description": "Formation axée sur la maîtrise des sciences de l'information et des technologies de communication.",
+	  "logo": "/portfolio/assets/images/about/u_lille.jpg"
 	},
 	{
-		"dates": "September 2019 · August 2022 ",
-		"role": "Degree in computer science",
-		"company": "Université de Lille",
-		"description": "General computer training ",
-		"logo": "/portfolio/assets/images/about/u_lille.jpg"
+	  "dates": "Septembre 2019 · Août 2022",
+	  "role": "Licence en informatique",
+	  "company": "Université de Lille",
+	  "description": "Formation générale en informatique",
+	  "logo": "/portfolio/assets/images/about/u_lille.jpg"
 	}
-]
+  ]
+  
