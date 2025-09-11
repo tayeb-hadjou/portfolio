@@ -1,14 +1,16 @@
 [
         {
-          "name": "ASCII Art",
-          "description": "Générateur d’ASCII art, il prend une image, une vidéo ou un flux de webcam en entrée et le convertit en art ASCII",
-          "parts": [
-            "Traitement d’image avec OpenCV",
-            "L’application peut traiter des images, des vidéos ou des flux de webcam"
+          "name":"Mes petits Paris",
+          "description":"Une web app de duel de pronostics de matchs de football entre amis",
+          "parts":[
+            "Le back-end est réalisé avec ExpressJs",
+            "Le front-end est réalisé en NextJs",
+            "La base de données est gérée avec supabase",
+            "deploiement sur Render"
           ],
-          "image": "/portfolio/assets/images/projects/ascii.jpg",
-          "url": "https://github.com/tayeb-hadjou/Ascii-art",
-          "tools": ["Python", "QT", "OpenCV"]
+          "image": "/portfolio/assets/images/projects/mpp.png",
+          "url":"https://mes-petits-paris-f68a.onrender.com/",
+          "tools":["Next.js","Express.Js","Supabase"]
         },
         {
           "name": "Toc Toc",
@@ -21,6 +23,17 @@
           "image": "/portfolio/assets/images/projects/bot.jpg",
           "url": "https://github.com/tayeb-hadjou/MyBot",
           "tools": ["Python", "Selenium", "BeautifulSoup"]
+        },
+        {
+          "name": "ASCII Art",
+          "description": "Générateur d’ASCII art, il prend une image, une vidéo ou un flux de webcam en entrée et le convertit en art ASCII",
+          "parts": [
+            "Traitement d’image avec OpenCV",
+            "L’application peut traiter des images, des vidéos ou des flux de webcam"
+          ],
+          "image": "/portfolio/assets/images/projects/ascii.jpg",
+          "url": "https://github.com/tayeb-hadjou/Ascii-art",
+          "tools": ["Python", "QT", "OpenCV"]
         },
         {
           "name": "Carte de visite",
