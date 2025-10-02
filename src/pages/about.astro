@@ -6,13 +6,13 @@ import education from "../collections/education.json";
 ---
 
 <Layout title="About Me">
-  <section class="relative z-20 max-w-4xl mx-auto my-12 px-7 lg:px-0 mt-32">
+  <section class="relative z-20 max-w-4xl mx-auto my-12 px-4 sm:px-7 lg:px-0 mt-32 overflow-x-hidden">
     <PageHeading
       title="À propos de moi"
       description="Bonjour 👋 Je suis étudiant en informatique, spécialisé en développement fullstack. Naturellement curieux, je m'intéresse à divers domaines et je suis toujours en quête de nouvelles connaissances pour améliorer mes compétences"
         />
     
-     <img src="/portfolio/assets/images/about/about.jpg" class="relative z-30 my-8 ml-2 h-[200px] md:h-[380px] md:w-full rounded-xl" />
+  <img src="/portfolio/assets/images/about/about.jpg" alt="Photo de présentation" loading="lazy" class="relative z-30 my-8 mx-auto h-[200px] md:h-[380px] w-full max-w-full object-cover rounded-xl" />
 
     <h2 class="mb-3 text-2xl font-bold dark:text-neutral-200">Mes compétences en développement web</h2>
     <p
@@ -20,27 +20,27 @@ import education from "../collections/education.json";
     >
     Je maîtrise plusieurs langages de programmation ainsi que des frameworks back-end et front-end. J’ai également de solides compétences en gestion de bases de données 
     </p>
-    <div id="skills_block" class="flex flex-col  justify-between w-full sm:flex-row ">
-      <div id="skills_front" class=" bg-white w-60 h-48 mt-4 border rounded-2xl bg-gradient-to-r flex flex-col items-center justify-center text-center m-auto">
-          <img src="/portfolio/assets/images/about/frontEnd.jpg" class="w-12 h-12 mx-auto " />
+    <div id="skills_block" class="flex flex-col sm:flex-row flex-wrap gap-4 w-full items-stretch justify-center">
+      <div id="skills_front" class="bg-white w-full max-w-[240px] sm:w-60 h-auto min-h-48 mt-2 p-4 border rounded-2xl flex flex-col items-center text-center">
+          <img src="/portfolio/assets/images/about/frontEnd.jpg" alt="Frontend" loading="lazy" class="w-12 h-12 mx-auto" />
           <h3 class="mt-4 text-lg">Developement Frontend</h3>
-          <p      class="text-sm leading-6 text-gray-600"
+          <p class="text-sm leading-6 text-gray-600"
           >
           Développement d’applications web avec NextJS, ReactJS et VueJS
           </p>
       </div>
-      <div id="skills_back" class=" bg-white w-60 h-48 mt-4 border  rounded-2xl bg-gradient-to-r  flex flex-col items-center justify-center text-center m-auto">
-        <img src="/portfolio/assets/images/about/server.jpg" class="w-10 h-10 mx-auto " />
+      <div id="skills_back" class="bg-white w-full max-w-[240px] sm:w-60 h-auto min-h-48 mt-2 p-4 border rounded-2xl flex flex-col items-center text-center">
+        <img src="/portfolio/assets/images/about/server.jpg" alt="Backend" loading="lazy" class="w-10 h-10 mx-auto" />
         <h3 class="mt-4 text-lg">Developement Backend</h3>
-        <p      class="text-sm leading-6 text-gray-600" 
+        <p class="text-sm leading-6 text-gray-600" 
         >
          Développement d’API avec Node, PHP, Python et Java
         </p>
       </div>
-      <div id="skills_db" class=" bg-white w-60 h-48 mt-4 border rounded-2xl bg-gradient-to-r  flex flex-col items-center justify-center text-center m-auto">
-        <img src="/portfolio/assets/images/about/db.jpg" class="w-10 h-10 mx-auto " />
+      <div id="skills_db" class="bg-white w-full max-w-[240px] sm:w-60 h-auto min-h-48 mt-2 p-4 border rounded-2xl flex flex-col items-center text-center">
+        <img src="/portfolio/assets/images/about/db.jpg" alt="Base de données" loading="lazy" class="w-10 h-10 mx-auto" />
         <h3 class="mt-4 text-lg">BDD</h3>
-        <p      class="text-sm leading-6 text-gray-600"
+        <p class="text-sm leading-6 text-gray-600"
         >
         Gestion de bases de données avec MySQL, MongoDB et PostgreSQL
         </p>
@@ -115,14 +115,16 @@ import education from "../collections/education.json";
       Voici mon CV :
     </p>
     <a
-        target="_blank"
-        href="/portfolio/assets/images/CV_l.pdf"
-        class="relative bg-white flex flex-col items-stretch duration-300 ease-out p-7 sm:p-3 group  rounded-2xl w-[450px] h-[600px] m-auto"
-        download
-      >
-      <img class={`absolute inset-0 z-10 block w-full h-full duration-300 ease-out  border rounded-2xl border-neutral-300 dark:border-neutral-600 ${
-              'group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:opacity-50 group-hover:border-[#ffdc5d]'
-          }`} src="/portfolio/assets/images/CV_l.jpg" class="w-full h-full" >
+      target="_blank"
+      href="/portfolio/assets/images/CV_l.pdf"
+      class="relative bg-white flex flex-col items-stretch duration-300 ease-out p-4 sm:p-5 group rounded-2xl w-full max-w-[450px] h-auto aspect-[3/4] m-auto overflow-hidden"
+      download
+    >
+      <img 
+        src="/portfolio/assets/images/CV_l.jpg" 
+        alt="CV" 
+        loading="lazy"
+        class="absolute inset-0 z-10 block w-full h-full object-cover duration-300 ease-out border rounded-2xl border-neutral-300 dark:border-neutral-600 group-hover:-translate-x-1 group-hover:-translate-y-1 group-hover:opacity-50 group-hover:border-[#ffdc5d]" />
                         <svg
             class="w-0 h-0 transition-transform duration-300 ease-out  group-hover:w-6 group-hover:h-6 absolute inset-0 m-auto "
             fill="currentColor"
@@ -148,7 +150,7 @@ import education from "../collections/education.json";
       Voici mes réseaux sociaux et mon adresse email : <a class="text-[#ffdc5d] hover:underline" href="mailto:massihadjou0@gmail.com "> massihadjou0@gmail.com </a>
     </p>
     <span
-      class="flex justify-around mt-8 mr-1 space-x-5 sm:ml-auto sm:mt-8 "
+      class="flex flex-wrap justify-center gap-6 mt-8 px-2"
     >
 
       <a
@@ -158,7 +160,7 @@ import education from "../collections/education.json";
       >
         <span class="sr-only">Instagram</span>
         <svg
-          class="w-16 h-16"
+          class="w-14 h-14 sm:w-16 sm:h-16"
           fill="currentColor"
           viewBox="0 0 24 24"
           aria-hidden="true"
@@ -176,7 +178,7 @@ import education from "../collections/education.json";
       >
         <span class="sr-only">𝕏</span>
         <svg
-          class="w-24 h-24 dark:stroke-black stroke-white"
+          class="w-16 h-16 sm:w-20 sm:h-20 dark:stroke-black stroke-white"
           viewBox="0 0 142 142"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -197,7 +199,7 @@ import education from "../collections/education.json";
       >
         <span class="sr-only">GitHub</span>
         <svg
-          class="w-16 h-16"
+          class="w-14 h-14 sm:w-16 sm:h-16"
           fill="currentColor"
           viewBox="2 2 20 20"
           aria-hidden="true"
@@ -215,7 +217,7 @@ import education from "../collections/education.json";
       >
         <span class="sr-only">LinkedIn</span>
         <svg
-          class="w-16 h-16"
+          class="w-14 h-14 sm:w-16 sm:h-16"
           fill="currentColor"
           viewBox="0 0 24 24"
           aria-hidden="true"
