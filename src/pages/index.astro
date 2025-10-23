@@ -12,7 +12,7 @@ import Background from "../components/Background.astro";
     class="w-full max-w-4xl mx-auto px-4 sm:px-6 md:mt-16 lg:mt-6 xl:px-0 mt-8"
   >
     <div class="md:h-full flex flex-col-reverse items-center md:flex-row gap-4 md:gap-8">
-      <div class="relative w-full md:w-1/2">
+      <div class="mt-[50px] md:mt-24 relative w-full md:w-1/2">
         <h1
           class="mb-3 sm:mb-5 text-3xl sm:text-4xl font-bold leading-snug sm:leading-tight dark:text-white"
         >
@@ -22,29 +22,50 @@ import Background from "../components/Background.astro";
         </h1>
         <p 
            id="att"
-            class="mb-4 sm:mb-6 text-neutral-600 typing-effect text-sm sm:text-base" style="display: none;"></p>
+            class="mb-4 sm:mb-6  typing-effect text-sm sm:text-base" style="display: none;"></p>
 
         <div id="from_bottom" style="opacity: 0;">
           <p
-          class="mb-2 font-semibold text-neutral-800 dark:text-neutral-200 text-sm sm:text-base">
+          class="mb-1 font-semibold text-neutral-800 dark:text-neutral-200 text-sm sm:text-base">
             <!-- I can help you out with: -->
-            Voici quelques-unes de mes compétences:
+            Mes compétences principales :
 
           </p>
           <ul
-            class="py-1 sm:py-2 space-y-[2px] sm:space-y-[3px] text-xs sm:text-sm list-disc list-inside text-neutral-500 dark:text-neutral-400"
+            class="py-1 sm:py-2 space-y-[2px] sm:space-y-[3px] text-xs sm:text-sm list-disc list-inside  dark:text-neutral-400"
           >
-            <li>Node.js,Next.js, Vue.js</li>
-            <li>Python, Java, c#, c </li>
-            <li>Explore mon site pour en découvrir plus...</li>
+            <li class="py-2">Développement fullstack, maîtrise de plusieurs langages et frameworks web front et back. <span class="font-semibold">Node.js, Next.js, Vue.js</span></li>
+            <li class="py-2">Maitrise des outils et environnements de dev: <span class="font-semibold">VsCode, IntelliJ, Docker, SonarQube, et bonnes pratiques Git.</span></li>
+            <li class="py-2">Autres compétences et langages maîtrisés : <span class="font-semibold">Python, C, Java</span>, DevOps (<span class="font-semibold">CI/CD, Docker</span>, Git, GitHub Actions), tests <span class="font-semibold">TDD/BDD</span>.</li>
           </ul>
+          <div class="mt-4 sm:mt-6 space-y-3">
+            <div class="flex flex-wrap gap-3">
+                        <p
+          class="mb-1 font-semibold text-neutral-800 dark:text-neutral-200 text-sm sm:text-base">
+            <!-- I can help you out with: -->
+            Quelques-uns de mes projets :
+          </p>
+          <ul
+            class="py-1 sm:py-2 space-y-[2px] sm:space-y-[3px] text-xs sm:text-sm list-disc list-inside  dark:text-neutral-400"
+          >
+            <li class="py-2">Une web app de duel de pronostics de matchs entre amis <span class="font-semibold">Node.js</span> et <span class="font-semibold">Vue.js</span>.</li>
+            <li class="py-2">Automatisation n8n de creation de clips vidéo optimisés pour les réseaux sociaux. <span class="font-semibold">n8n, python.</span>  </li>
+            <li class="py-2">Application web de superposition 3D en temps réel sur un flux vidéo<span class="font-semibold">Three.js</span>.</li>
+            <li class="py-2"><a href="./portfolio/projects" class="underline">Explorez mon site pour en découvrir plus</a></li>          
+          </ul>
+
+            </div>
+          </div>
+
         </div>
+
         </div>
         <div id="ok" class="relative">
           <div  class="absolute p-1 sm:p-2 w-14 h-14 sm:w-16 sm:h-16 z-10 text-xl sm:text-2xl md:top-[-24px] md:left-[-24px]" 
           ><span id="shake" class="bg-white hidden flex items-center justify-center w-full h-full border border-dashed rounded-full dark:bg-neutral-950 border-neutral-300 dark:border-neutral-700">👋</span></div>
           <div id="image_container" class="relative bg-white w-40 h-40 sm:w-52 sm:h-52 md:w-[380px] md:h-72 rounded-full md:rounded-2xl mt-4 md:mt-0 border border-neutral-300 border-dashed md:px-10 opacity-0 transition-opacity duration-[2000ms] overflow-hidden">
             <img
+              alt=""
               src="/portfolio/assets/images/photo.png"
               class="w-full h-full object-cover rounded-full md:rounded-2xl"
             />
@@ -53,7 +74,10 @@ import Background from "../components/Background.astro";
       </div>
     </div>
     </div>
-    
+          <div class="mt-2 m-auto hidden"   id="button_cv" >
+            <Button link="/portfolio/assets/images/CV_Hadjou_Tayeb.pdf" variant="primary"  rel="noopener noreferrer"
+              text="Télécharger mon CV"/>
+          </div>
   </div>
 </Layout>
 
@@ -120,6 +144,7 @@ import Background from "../components/Background.astro";
     const shakeElement = document.getElementById('shake');
     const fotterElement = document.getElementById('footer');
     const headerElement = document.getElementById('header');
+    const buttonCvElement = document.getElementById('button_cv');
 
     function typeWriter(element, text, speed, callback) {
       let index = 0;
@@ -145,6 +170,9 @@ import Background from "../components/Background.astro";
       fotterElement.classList.add('fade-in-up');
       headerElement.classList.remove('hidden');
       headerElement.classList.add('fade-in-up');
+      buttonCvElement.classList.remove('hidden');
+      buttonCvElement.classList.add('fade-in-up');
+
     }
 
     typeWriter(titleTypingElement, titleText, speed, () => {
