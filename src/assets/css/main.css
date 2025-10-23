@@ -22,4 +22,8 @@ body {
   border-radius: 30px;
 }
 
+    a.underline:hover {
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+  }
 
