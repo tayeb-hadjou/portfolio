@@ -44,8 +44,8 @@ window.evaluateHeaderPosition = () => {
 		headerElement.firstElementChild.classList.add(...unstickyClassesContainer);
 		headerElement.classList.add(...unstickyClasses);
 		headerElement.classList.remove(...stickyClasses);
-		document.getElementById("menu").classList.remove("top-[56px]");
-		document.getElementById("menu").classList.add("top-[75px]");
+		document.getElementById("menu").classList.remove("top-[10px]");
+		document.getElementById("menu").classList.add("top-[5px]");
 	}
 };
 
