@@ -9,7 +9,7 @@ import Background from "../components/Background.astro";
   <Background />  
   <div
     id="test"
-    class="w-full max-w-4xl mx-auto px-4 sm:px-6 md:mt-16 lg:mt-6 xl:px-0 mt-16"
+    class="w-full max-w-4xl mx-auto px-4 sm:px-6 xs:mt-16 md:mt-32 lg:mt-16 xl:px-0 mt-16"
   >
     <div class="md:h-full flex flex-col-reverse items-center md:flex-row gap-4 md:gap-8">
       <div class="mt-[40px] md:mt-24 relative w-full md:w-1/2">
@@ -129,9 +129,7 @@ import Background from "../components/Background.astro";
     animation: shake 0.9s 2;
     transform-origin: 100% 100%;
   }
-  @media (max-width: 480px) {
-    #test { margin-top: 1.5rem; }
-  }
+
 
 </style>
 
